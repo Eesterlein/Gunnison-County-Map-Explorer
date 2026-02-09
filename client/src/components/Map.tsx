@@ -14,6 +14,7 @@ interface MapProps {
 interface SelectedFeature {
   feature: GeoJSON.Feature;
   lngLat: maplibregl.LngLat;
+  layerId: string;
 }
 
 function getLayerIds(layer: LayerConfig): string[] {
@@ -181,9 +182,11 @@ export function Map({ enabledLayers }: MapProps) {
       });
 
       if (features.length > 0) {
+        const selectedFeature = features[0];
         setSelectedFeature({
-          feature: features[0] as GeoJSON.Feature,
+          feature: selectedFeature as GeoJSON.Feature,
           lngLat: e.lngLat,
+          layerId: selectedFeature.layer?.id || "",
         });
       }
     };
@@ -222,6 +225,7 @@ export function Map({ enabledLayers }: MapProps) {
         map={map}
         feature={selectedFeature?.feature ?? null}
         lngLat={selectedFeature?.lngLat ?? null}
+        layerId={selectedFeature?.layerId ?? ""}
         onClose={handlePopupClose}
       />
     </>
