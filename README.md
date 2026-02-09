@@ -263,9 +263,6 @@ curl "http://localhost:8000/collections"
 - [OGC Features API Spec](https://www.ogc.org/standards/ogcapi-features)
 - [GDAL/OGR Documentation](https://gdal.org/)
 
-## License
-
-[Add your license here]
 =======
 # Gunnison-County-Map-Explorer
 Gunnison County Map Explorer is an interactive, public-facing GIS web application built with modern open-source mapping technologies.
