@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Gunnison County Interactive Map
 
 An interactive web map for Gunnison County, Colorado that displays GIS data layers including parcels, roads, jurisdictions, tax districts, and more. Built with a modern Docker-based stack combining PostGIS for spatial data, a Node/OGC Features API backend, and a React/MapLibre frontend.
@@ -263,9 +263,6 @@ curl "http://localhost:8000/collections"
 - [OGC Features API Spec](https://www.ogc.org/standards/ogcapi-features)
 - [GDAL/OGR Documentation](https://gdal.org/)
 
-## License
-
-[Add your license here]
 =======
 # Gunnison-County-Map-Explorer
 Gunnison County Map Explorer is an interactive, public-facing GIS web application built with modern open-source mapping technologies.
