@@ -59,3 +59,7 @@ pgdata/
 tmp/
 temp/
 *.tmp
+
+# Source GIS data is not committed; see GISData/README.md
+GISData/*
+!GISData/README.md

@@ -3,6 +3,8 @@
 
 An interactive web map for Gunnison County, Colorado that displays GIS data layers including parcels, roads, jurisdictions, tax districts, and more. Built with a modern Docker-based stack combining PostGIS for spatial data, a Node/OGC Features API backend, and a React/MapLibre frontend.
 
+> **Independent research project.** This project is built from publicly available Gunnison County, Colorado assessor data downloads and GIS parcel data. It is not an official product of the Gunnison County Assessor's Office or Gunnison County, is not a system of record, and may contain errors or out-of-date information. Always verify against official county records.
+
 ## Features
 
 - **Interactive mapping** with MapLibre GL - smooth pan, zoom, and layer interactions
@@ -129,7 +131,7 @@ Then revert to `"/api"` before building the Docker image.
 ├── docker-compose.yml        # Docker services configuration
 ├── init-db.sql               # PostgreSQL initialization script
 ├── load-shapefiles.sh        # GDAL/OGR script to load shapefiles
-├── GISData/                  # Shapefile data directory
+├── GISData/                  # Shapefile data directory (not committed; see GISData/README.md)
 │   ├── Address.shp
 │   ├── Jurisdictions.shp
 │   ├── Road.shp
